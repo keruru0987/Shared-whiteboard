@@ -16,7 +16,7 @@ In this project, I continued the implementation of the Client-Server architectur
 
 This system mainly consists of two parts: the Manager (Server) and the Client. As shown in the diagram below, if a user wants to perform an operation on the whiteboard, they first send the command message to the Server. The Server then broadcasts the command to all users, ensuring that all whiteboards are updated simultaneously for everyone.
 
-![arch](C:\Users\79336\Desktop\report_ds_a2_md\arch.png)
+![arch](arch.png)
 
 ##  Implementation Details
 
@@ -24,7 +24,7 @@ This section introduces the Server and Client separately.
 
 ### Manager（Server）
 
-![server_class](C:\Users\79336\Desktop\report_ds_a2_md\server_class.png)
+![server_class](server_class.png)
 
 - ManagerServer
 
@@ -34,7 +34,7 @@ This section introduces the Server and Client separately.
 
   The following image shows the `ManagerPanel`. The left area consists of a user list and a kick button, while the right area is the chat region. The bottom-left section contains various drawing tools, and the bottom-right section contains some administrator functionalities, including opening a new whiteboard, opening a previously saved whiteboard, saving the current whiteboard, saving the current whiteboard as an image, and closing the whiteboard. The largest area in the middle represents the whiteboard.
 
-  ![image-20230526034149834](C:\Users\79336\Desktop\report_ds_a2_md\image-20230526034149834.png)
+  ![image-20230526034149834](image-20230526034149834.png)
 
   In the ManagerPanel, there is also a `userlist` to keep track of users currently connected to the whiteboard. It is synchronized with the `userlist in the ManagerServer` through the `update`method in the class.
 
@@ -52,7 +52,7 @@ This section introduces the Server and Client separately.
 
 ### Client
 
-![packageclient](C:\Users\79336\Desktop\report_ds_a2_md\packageclient.png)
+![packageclient](packageclient.png)
 
 - Client
 
@@ -62,7 +62,7 @@ This section introduces the Server and Client separately.
 
 - ClientPanel
 
-  ![image-20230526195411446](C:\Users\79336\Desktop\report_ds_a2_md\image-20230526195411446.png)
+  ![image-20230526195411446](image-20230526195411446.png)
 
   
   
